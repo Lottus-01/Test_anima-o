@@ -1,0 +1,65 @@
+*{
+    margin: 50;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bloco{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(51, 78, 138);
+    transition: width 0.5s, height 0.5s, background-color 0.4s;
+}
+
+.bloco:hover{
+    width: 300px;
+    height: 300px;
+    background-color: #657fb8;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.texto{
+    color: azure;
+}
+
+.bloco2{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(101, 127, 184);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: bloco2;
+    animation-duration: 5s;
+}
+@keyframes bloco2{
+    
+    0% {background-color: #375cad; left: 0px; right: 0px;}
+    50% {background-color: #5576bd; left: 2000px; right: 0px; transform: rotate(360deg);}
+    100% {background-color: #8fa6d8; left: 0px; right: 2000px; transform: rotate(720deg)}
+}
+
+.bloco3{
+    width: 400px;
+    height: 400px;
+    background-image: url(img/01\ cat.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: bloco3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bloco3{
+    
+    0% {background-image: url(img/01\ cat.jpg); background-repeat: no-repeat; background-size: cover;}
+    25% {background-image: url(img/blade\ cat.jpg); background-repeat: no-repeat; background-size: cover;}
+    50% {background-image: url(img/março\ cat.jpg); background-repeat: no-repeat; background-size: cover;}
+    75% {background-image: url(img/kafka\ cat.jpg); background-repeat: no-repeat; background-size: cover;}
+    100% {background-image: url(img/herta\ cat.jpg); background-repeat: no-repeat; background-size: cover;}
+}
